@@ -102,6 +102,7 @@
   .contact {
     .contactbox {
       flex-direction: column;
+      width: unset;
       .msg {
         text-align: center;
       }

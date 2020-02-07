@@ -1,8 +1,6 @@
 nav {
   position: sticky;
-  left: 0;
   top: 0;
-  bottom: 0;
   writing-mode: vertical-rl;
   text-orientation: upright;
   color: aliceblue;
@@ -12,7 +10,7 @@ nav {
   font-weight: bolder;
   width: 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   .list {
     display: flex;
@@ -33,6 +31,5 @@ nav {
   }
 }
 .name {
-  height: 100vh;
   // position: fixed;
 }

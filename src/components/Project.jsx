@@ -1,11 +1,10 @@
 import React from 'react';
 import './Project.scss';
-import blanche from '../assets/Blanche.PNG';
 
 const Project = props => {
   return (
     <div className={`project `}>
-      <img src={blanche} alt='' />
+      <img src={props.image} alt='' />
       <div className='cover'>
         <p>{props.name}</p>
         <hr className='dash' />
