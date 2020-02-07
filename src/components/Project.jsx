@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-import blanche from '../assets/Blanche.PNG';
+import React from 'react';
 import './Project.scss';
+import blanche from '../assets/Blanche.PNG';
 
-const Project = () => {
-  const [hover, setHover] = useState(false);
-  const handleHover = e => {
-    setHover(!hover);
-  };
+const Project = props => {
   return (
-    <div
-      onMouseLeave={handleHover}
-      onMouseEnter={handleHover}
-      className={`project `}
-    >
+    <div className={`project `}>
       <img src={blanche} alt='' />
-      {hover && (
-        <div className='cover'>
-          <p>Blanche Neige</p>
+      <div className='cover'>
+        <p>{props.name}</p>
+        <hr className='dash' />
+        <span>{props.desc}</span>
+        <div className='link'>
+          <a href={props.link} target='_blank' rel='noopener noreferrer'>
+            <i className='fas fa-external-link-alt'></i>
+          </a>
+          <a href={props.git} target='_blank' rel='noopener noreferrer'>
+            <i className='devicon-github-plain colored'></i>
+          </a>
         </div>
-      )}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,21 @@
 .work {
-  cursor: pointer;
   display: grid;
+  // gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   flex: 1;
+  background-color: #333;
+}
+
+@media only screen and (max-width: 767px) {
+  .work {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .work {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }

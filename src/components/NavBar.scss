@@ -1,4 +1,8 @@
 nav {
+  position: sticky;
+  left: 0;
+  top: 0;
+  bottom: 0;
   writing-mode: vertical-rl;
   text-orientation: upright;
   color: aliceblue;
@@ -7,12 +11,16 @@ nav {
   font-size: 2rem;
   font-weight: bolder;
   width: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   .list {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-size: 1rem;
     width: 40px;
+    height: 100%;
     li:hover {
       color: orange;
     }
@@ -24,10 +32,7 @@ nav {
     transition-timing-function: ease-out;
   }
 }
-
-.display {
-}
-
-.name:hover {
-  // transform: translateY(300px);
+.name {
+  height: 100vh;
+  // position: fixed;
 }
