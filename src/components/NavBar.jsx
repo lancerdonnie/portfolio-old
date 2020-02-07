@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.scss';
-const NavBar = () => {
+import withDimensions from '../wrapper/withDimensions';
+const NavBar = ({ isMobileSized }) => {
   const [ent, setEnt] = useState(false);
 
   const handleEnter = e => {
     setEnt(!ent);
   };
-
   return (
     <nav
-      onTouchStart={handleEnter}
-      onMouseEnter={handleEnter}
-      onMouseLeave={handleEnter}
+      onTouchStart={isMobileSized && handleEnter}
+      onMouseEnter={!isMobileSized && handleEnter}
+      onMouseLeave={!isMobileSized && handleEnter}
     >
       <ul className={`list ${ent ? '' : 'display'}`}>
         <li>
@@ -35,4 +35,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default withDimensions(NavBar);
