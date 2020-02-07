@@ -1,0 +1,37 @@
+@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
+.icons {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.icons i {
+  position: absolute;
+  font-size: 3rem;
+  // opacity: 0.6;
+}
+.skills {
+  position: relative;
+}
+
+.skilllist {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.skillitem {
+  // background-color: #ff9800; orange
+  // background-color: #03a9f4; blue
+  background-color: #59407f;
+  // background: linear-gradient(80deg, #03a9f4, #ff9800);
+  // color: #ff9800;
+  // #f7ec90 yellow
+  // color: white;
+  color: #f7ec90;
+  margin: 10px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  z-index: 2;
+}

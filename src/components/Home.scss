@@ -1,0 +1,57 @@
+.home {
+  flex: 1;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  text-align: right;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  .homediv {
+    & > span:nth-child(1) {
+      opacity: 0;
+      animation-delay: 1s;
+      margin-top: -100vh;
+      animation-name: intro1;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes intro1 {
+      to {
+        opacity: 1;
+      }
+    }
+    & > span:nth-child(3),
+    & > span:nth-child(4),
+    & > span:nth-child(6),
+    & > span:nth-child(8) {
+      position: relative;
+      right: -100vw;
+      animation-delay: 3s;
+      animation-name: intro2;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes intro2 {
+      to {
+        right: 0;
+      }
+    }
+
+    & > span:nth-child(4) {
+      color: orange;
+    }
+    & > span:nth-child(6) {
+      animation-delay: 6s;
+    }
+    & > span:nth-child(8) {
+      animation-delay: 9s;
+    }
+  }
+}

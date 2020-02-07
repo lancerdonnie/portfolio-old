@@ -1,0 +1,33 @@
+nav {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: aliceblue;
+  cursor: pointer;
+  height: 100vh;
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 40px;
+  .list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    width: 40px;
+    li:hover {
+      color: orange;
+    }
+  }
+  .display {
+    display: none;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-timing-function: ease-out;
+  }
+}
+
+.display {
+}
+
+.name:hover {
+  // transform: translateY(300px);
+}
