@@ -5,13 +5,15 @@ const NavBar = () => {
   const [ent, setEnt] = useState(false);
 
   const handleEnter = e => {
-    setEnt(true);
+    setEnt(!ent);
   };
-  const handleLeave = e => {
-    setEnt(false);
-  };
+
   return (
-    <nav onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+    <nav
+      onTouchStart={handleEnter}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleEnter}
+    >
       <ul className={`list ${ent ? '' : 'display'}`}>
         <li>
           <Link to='/'>Home</Link>
