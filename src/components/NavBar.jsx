@@ -26,7 +26,9 @@ const NavBar = () => {
           <Link to='/contact'>Contact</Link>
         </li>
       </ul>
-      <div className={`name ${ent ? 'display' : ''}`}>adedeji babajide</div>
+      <div className={`name ${ent ? 'display' : ''}`}>
+        adedeji <div className='ball'></div> babajide
+      </div>
     </nav>
   );
 };
