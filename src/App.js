@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Work from './components/Work';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+
 function App() {
   useEffect(() => {
     setTimeout(() => {
@@ -24,7 +25,9 @@ function App() {
             return <Home {...props} anim={anim} />;
           }}
         />
+
         <Route exact path='/work' component={Work} />
+
         <Route exact path='/skills' component={Skills} />
         <Route exact path='/contact' component={Contact} />
       </Switch>

@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Skills.scss';
 import withDimensions from '../wrapper/withDimensions';
 import Icon from './Icon';
+import { CSSTransition } from 'react-transition-group';
 
 const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
+  const [app, setApp] = useState(false);
+  useEffect(() => {
+    setApp(true);
+  }, []);
   const icons = [
     'devicon-visualstudio-plain colored',
     'devicon-bootstrap-plain colored',
@@ -57,15 +62,25 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
           );
         })}
       </div>
-      <div className='skilllist'>
-        {skilllist.map((el, i) => {
-          return (
-            <p className='skillitem' key={i}>
-              {el}
-            </p>
-          );
-        })}
-      </div>
+      <CSSTransition
+        in={app}
+        timeout={5000}
+        classNames='message'
+        // unmountOnExit
+        // appear
+        // onEntered={this.listSwitch}
+        // onExit={this.listSwitch}
+      >
+        <div className='skilllist'>
+          {skilllist.map((el, i) => {
+            return (
+              <p className='skillitem' key={i}>
+                {el}
+              </p>
+            );
+          })}
+        </div>
+      </CSSTransition>
     </div>
   );
 };

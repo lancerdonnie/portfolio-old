@@ -10,7 +10,7 @@ const NavBar = ({ isMobileSized }) => {
   };
   return (
     <nav
-      onTouchStart={isMobileSized && handleEnter}
+      onClick={isMobileSized && handleEnter}
       onMouseEnter={!isMobileSized && handleEnter}
       onMouseLeave={!isMobileSized && handleEnter}
     >

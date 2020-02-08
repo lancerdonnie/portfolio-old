@@ -5,6 +5,17 @@
   grid-template-rows: repeat(2, 1fr);
   flex: 1;
   background-color: #333;
+  animation-name: work;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+@keyframes work {
+  from {
+    width: -100vw;
+  }
+  to {
+    width: unset;
+  }
 }
 
 @media only screen and (max-width: 767px) {

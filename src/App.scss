@@ -10,8 +10,8 @@ body {
   font-family: Montserrat;
   background-color: black;
   color: white;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
--webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 li {
   list-style-type: none;
@@ -24,4 +24,12 @@ a {
 
 .App {
   display: flex;
+}
+
+.wor-enter {
+  transform: translateX(100%);
+}
+.wor-enter-active {
+  transform: translateX(0);
+  transition: all 3000ms ease;
 }
