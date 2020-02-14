@@ -13,24 +13,25 @@
   cursor: pointer;
   animation-name: arrow;
   animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
+  animation-delay:3s;
 }
 .mywork {
   font-size: 1.5rem;
 }
 @keyframes arrow {
-  0% {
-    bottom: 90px;
-  }
-  10% {
-    bottom: 60px;
-  }
-  20% {
-    bottom: 75px;
-  }
-  30% {
-    bottom: 60px;
-  }
+ 0% {
+   bottom:90px;
+
+ }
+ 33%{
+  bottom:60px;
+ }
+ 66%,
+ 100%{
+  bottom:80px;
+ }
+
 }
