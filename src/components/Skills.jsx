@@ -46,7 +46,8 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
     'Design using Figma and illustrator',
     'Single Page Applications and AJAX',
     'Basic Experience in Flutter',
-    'Unit testing with Jest'
+    'Unit testing with Jest',
+    'Real-time communication with Socket.io'
   ];
   return (
     <div className='skills'>

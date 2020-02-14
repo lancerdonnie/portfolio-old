@@ -12,6 +12,15 @@ const Work = () => {
       git: 'https://github.com/lancerdonnie/blanche-neige'
     },
     {
+      name: 'Chat Pal',
+      image:
+        'https://res.cloudinary.com/dtyrfo0fx/image/upload/v1581668520/portfolio/chat.png',
+      desc:
+        'A chat app where users can create rooms, join rooms to chat and chat with all users',
+      link: 'https://lancers-chat-pal.herokuapp.com',
+      git: 'https://github.com/lancerdonnie/chat-pal'
+    },
+    {
       name: 'Book Finder',
       image:
         'https://res.cloudinary.com/dtyrfo0fx/image/upload/v1581079141/portfolio/book.png',
@@ -52,6 +61,7 @@ const Work = () => {
       git: 'https://github.com/lancerdonnie/Hacker-News_App'
     }
   ];
+  //https://res.cloudinary.com/dtyrfo0fx/image/upload/v1581668520/portfolio/chat.png
   return (
     <div className='work'>
       {projects.map((el, i) => {

@@ -14,7 +14,8 @@ const Arrow = props => {
   };
   return (
     <div onClick={handleClick} className='arrow'>
-      <img src={arrow} alt='Go Down' />
+      {/* <img src={arrow} alt='Go Down' /> */}
+      <span className='mywork'>my work</span>
     </div>
   );
 };

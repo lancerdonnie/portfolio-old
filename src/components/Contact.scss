@@ -44,6 +44,23 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      animation-name: msg;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+      animation-direction: alternate;
+      @keyframes msg {
+        0%,
+        1% {
+          opacity: 0;
+          transform: translateY(5000px);
+        }
+        99%,
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
       & > div {
         margin: 10px;
         & > p {
