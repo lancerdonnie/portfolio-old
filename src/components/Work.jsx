@@ -45,6 +45,15 @@ const Work = () => {
       git: 'https://github.com/lancerdonnie/Hacker-News_App'
     },
     {
+      name: 'Caption Cards',
+      image:
+        'https://res.cloudinary.com/dtyrfo0fx/image/upload/v1582734471/caption%20cards/caption.png',
+      desc:
+        'A web application that allows people to add captions and an option to label the captions with tags',
+      link: 'https://captioncardsbylancer.netlify.com/',
+      git: 'https://github.com/lancerdonnie/caption-cards'
+    },
+    {
       name: 'Bet Code Converter',
       image:
         'https://res.cloudinary.com/dtyrfo0fx/image/upload/v1581079140/portfolio/bconvert.png',
@@ -61,7 +70,6 @@ const Work = () => {
       git: 'https://github.com/lancerdonnie/Hacker-News_App'
     }
   ];
-  //https://res.cloudinary.com/dtyrfo0fx/image/upload/v1581668520/portfolio/chat.png
   return (
     <div className='work'>
       {projects.map((el, i) => {

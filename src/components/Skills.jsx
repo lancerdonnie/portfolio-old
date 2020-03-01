@@ -46,7 +46,7 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
     'Design using Figma and illustrator',
     'Single Page Applications and AJAX',
     'Basic Experience in Flutter',
-    'Unit testing with Jest',
+    'Unit testing with Jest, react testing library',
     'Real-time communication with Socket.io'
   ];
   return (
