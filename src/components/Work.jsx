@@ -86,6 +86,14 @@ const Work = () => {
       link: '#',
       git: 'https://github.com/lancerdonnie/fruity/',
     },
+    {
+      name: 'Piggyvest Calculator',
+      image:
+        'https://res.cloudinary.com/dtyrfo0fx/image/upload/v1593704269/screencapture-riskiestrest-htmlpasta-2020-07-02-16_37_11.png',
+      desc: 'A calculator page for piggyvest interests',
+      link: 'https://riskiestrest.htmlpasta.com/',
+      git: 'https://github.com/lancerdonnie/PiggyVestInterestCalculator',
+    },
   ];
   return (
     <div className="work">

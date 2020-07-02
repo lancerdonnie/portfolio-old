@@ -1,8 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import arrow from '../arrow.png';
+// import arrow from '../arrow.png';
 import './Arrow.scss';
-const Arrow = props => {
+const Arrow = (props) => {
   const handleClick = () => {
     switch (props.location.pathname) {
       case '/':
@@ -13,9 +13,9 @@ const Arrow = props => {
     }
   };
   return (
-    <div onClick={handleClick} className='arrow'>
+    <div onClick={handleClick} className="arrow">
       {/* <img src={arrow} alt='Go Down' /> */}
-      <span className='mywork'>my work</span>
+      <span className="mywork">my work</span>
     </div>
   );
 };
