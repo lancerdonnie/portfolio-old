@@ -27,16 +27,17 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
     'devicon-css3-plain-wordmark colored',
     'devicon-chrome-plain colored',
     'devicon-firefox-plain colored',
-    'devicon-google-plain colored'
+    'devicon-google-plain colored',
   ];
   const skilllist = [
     'Fundamentals- JQuery, CSS3 including Grid',
     'Flexbox & SCSS, HTML5, Javascript',
     'React, hooks and Routing, Context Api and Redux',
+    'Vue, Vuex',
     'Proficient with Frontend Frameworks including Material UI, Bootstrap4',
     'Proficient with Server-side Frameworks like NodeJS, Express and Puppeteer',
     'Implementation of CRUD operations',
-    'NoSQL Database management with mongoose, MongoDB, Cloud Firestore',
+    'NoSQL Database management with mongoose, MongoDB, Cloud Firestore,MySql',
     'Authentication and Authorization with JWT',
     'OAuth & Firebase',
     'Deployment with Netlify and Heroku',
@@ -45,13 +46,14 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
     'Creation of Google Cloud Functions',
     'Design using Figma and illustrator',
     'Single Page Applications and AJAX',
-    'Basic Experience in Flutter',
+    'Flutter and Provider Package',
+    'Basic Experience ionic and react native',
     'Unit testing with Jest, react testing library',
-    'Real-time communication with Socket.io'
+    'Real-time communication with Socket.io and Signal-R',
   ];
   return (
-    <div className='skills'>
-      <div className='icons'>
+    <div className="skills">
+      <div className="icons">
         {icons.map((el, i) => {
           return (
             <Icon
@@ -66,16 +68,16 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
       <CSSTransition
         in={app}
         timeout={5000}
-        classNames='message'
+        classNames="message"
         // unmountOnExit
         // appear
         // onEntered={this.listSwitch}
         // onExit={this.listSwitch}
       >
-        <div className='skilllist'>
+        <div className="skilllist">
           {skilllist.map((el, i) => {
             return (
-              <p className='skillitem' key={i}>
+              <p className="skillitem" key={i}>
                 {el}
               </p>
             );
