@@ -31,8 +31,9 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
   ];
   const skilllist = [
     'Fundamentals- JQuery, CSS3 including Grid',
-    'Flexbox & SCSS, HTML5, Javascript',
+    'Flexbox & SCSS, HTML5, Javascript, TypeScript',
     'React, hooks and Routing, Context Api and Redux',
+    'Php, C#, Asp.net Core',
     'Vue, Vuex',
     'Proficient with Frontend Frameworks including Material UI, Bootstrap4',
     'Proficient with Server-side Frameworks like NodeJS, Express and Puppeteer',
