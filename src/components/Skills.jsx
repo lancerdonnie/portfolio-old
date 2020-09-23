@@ -34,7 +34,7 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
     'Flexbox & SCSS, HTML5, Javascript, TypeScript',
     'React, hooks and Routing, Context Api and Redux',
     'Php, C#, Asp.net Core',
-    'Vue, Vuex',
+    'Vue 3, Vuex',
     'Proficient with Frontend Frameworks including Material UI, Bootstrap4',
     'Proficient with Server-side Frameworks like NodeJS, Express and Puppeteer',
     'Implementation of CRUD operations',
