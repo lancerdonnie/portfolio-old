@@ -35,7 +35,7 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
     'React, hooks and Routing, Context Api and Redux',
     'Php, C#, Asp.net Core',
     'Vue 3, Vuex',
-    'Proficient with Frontend Frameworks including Material UI, Bootstrap4',
+    'Proficient with Frontend Frameworks including Material UI, Bootstrap4, Tailwind-CSS',
     'Proficient with Server-side Frameworks like NodeJS, Express and Puppeteer',
     'Implementation of CRUD operations',
     'NoSQL Database management with mongoose, MongoDB, Cloud Firestore,MySql',
