@@ -2,35 +2,24 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.scss';
 import withDimensions from '../wrapper/withDimensions';
-const NavBar = ({ isMobileSized }) => {
-  const [ent, setEnt] = useState(false);
 
-  const handleEnter = e => {
-    setEnt(!ent);
-  };
+const NavBar = () => {
   return (
-    <nav
-      onClick={isMobileSized && handleEnter}
-      onMouseEnter={!isMobileSized && handleEnter}
-      onMouseLeave={!isMobileSized && handleEnter}
-    >
-      <ul className={`list ${ent ? '' : 'display'}`}>
+    <nav>
+      <ul className={`list `}>
         <li>
-          <Link to='/'>Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to='/work'>Work</Link>
+          <Link to="/work">Work</Link>
         </li>
         <li>
-          <Link to='/skills'>Skills</Link>
+          <Link to="/skills">Skills</Link>
         </li>
         <li>
-          <Link to='/contact'>Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
-      <div className={`name ${ent ? 'display' : ''}`}>
-        adedeji <div className='ball'></div> babajide
-      </div>
     </nav>
   );
 };
