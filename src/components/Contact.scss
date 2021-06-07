@@ -18,7 +18,7 @@
       p {
         font-size: 3rem;
         font-weight: 700;
-        animation-name: contact;
+        // animation-name: contact;
         animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: ease;
@@ -44,7 +44,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      animation-name: msg;
+      // animation-name: msg;
       animation-duration: 2s;
       animation-iteration-count: 1;
       animation-timing-function: ease;
@@ -107,7 +107,7 @@
       position: absolute;
       height: 100%;
       width: 100%;
-      background-color: #ff9800;
+      background-color: var(--base-color);
       top: -10px;
       left: 10px;
       z-index: -1;

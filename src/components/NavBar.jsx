@@ -1,27 +1,33 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './NavBar.scss';
-import withDimensions from '../wrapper/withDimensions';
 
 const NavBar = () => {
   return (
     <nav>
       <ul className={`list `}>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/work">Work</Link>
-        </li>
-        <li>
-          <Link to="/skills">Skills</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
+        <LinkItem text="Home" to="/" />
+        <LinkItem text="Work" to="/work" />
+        <LinkItem text="Skills" to="/skills" />
+        <LinkItem text="Contact" to="/contact" />
       </ul>
     </nav>
   );
 };
 
-export default withDimensions(NavBar);
+const LinkItem = ({ text, to }) => {
+  const { pathname } = useLocation();
+  return (
+    <li>
+      <Link
+        id={text}
+        to={to}
+        className={`${pathname === to ? 'list__selected' : ''}`}
+      >
+        {text}
+      </Link>
+    </li>
+  );
+};
+
+export default NavBar;

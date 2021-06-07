@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.scss';
 import Arrow from './Arrow';
 import Svgs from './Svgs';
+import { Link } from 'react-router-dom';
 
 const Home = ({ anim }) => {
   return (
@@ -44,13 +45,16 @@ const Home = ({ anim }) => {
       <div className="div3">
         <div>
           <div>
-            <span style={{ color: '#005AFF' }}>FullStack</span> Developer
+            <span style={{ color: 'var(--alt-text)' }}>FullStack</span>{' '}
+            Developer
           </div>
           <div>Infrastructure</div>
           <div>Enterprise</div>
         </div>
       </div>
-      <div className="div4">Work</div>
+      <Link className="div4" to="/work">
+        Work
+      </Link>
     </div>
   );
 };

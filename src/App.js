@@ -27,8 +27,8 @@ function App() {
           }}
         />
 
-        <Route exact path="/work" component={Work} />
-        <Route exact path="/work2" component={Work2} />
+        <Route exact path="/work2" component={Work} />
+        <Route exact path="/work" component={Work2} />
 
         <Route exact path="/skills" component={Skills} />
         <Route exact path="/contact" component={Contact} />

@@ -1,4 +1,5 @@
 .home {
+  // color: rgb(187, 185, 185);
   // flex: 1;
   // font-size: 3rem;
   // font-weight: 900;
@@ -40,13 +41,17 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: background-color ease 0.3s;
+    transition: all ease 0.3s;
+    transition-property: background-color, font-size;
+    // background-color: var(--sec-color);
     &:hover {
-      // background-color: orange;
-      background-color: #005aff;
+      background-color: white;
+      color: var(--base-color);
+      font-size: 3.5rem;
     }
     &:active {
-      background-color: #0040b6;
+      // background-color: #0040b6;
+      font-size: 3rem;
     }
   }
 
@@ -82,7 +87,7 @@
     }
 
     & > span:nth-child(4) {
-      color: orange;
+      color: var(--base-color);
     }
     & > span:nth-child(6) {
       animation-delay: 6s;

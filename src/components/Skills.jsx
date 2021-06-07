@@ -30,28 +30,14 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
     'devicon-google-plain colored',
   ];
   const skilllist = [
-    'Fundamentals- JQuery, CSS3 including Grid',
-    'Flexbox & SCSS, HTML5, Javascript, TypeScript',
-    'React, hooks and Routing, Context Api and Redux',
-    'Php, C#, Asp.net Core',
-    'Vue 3, Vuex',
-    'Proficient with Frontend Frameworks including Material UI, Bootstrap4, Tailwind-CSS',
-    'Proficient with Server-side Frameworks like NodeJS, Express and Puppeteer',
-    'Implementation of CRUD operations',
-    'NoSQL Database management with mongoose, MongoDB, Cloud Firestore,MySql',
-    'Authentication and Authorization with JWT',
-    'OAuth & Firebase',
-    'Deployment with Netlify and Heroku',
-    'Good understanding of Git workflow',
-    'Proficient API design and development',
-    'Google Cloud Functions, lambda, serverless',
-    'Devops tools - Docker, docker-compose and Nginx',
-    'Design using Figma and illustrator',
-    'Single Page Applications and AJAX',
-    'Flutter and Provider Package',
-    'Basic Experience ionic and react native',
-    'Unit testing with Jest, react testing library',
-    'Real-time communication with Socket.io and Signal-R',
+    'Creating websites using standard HTML/CSS/JS practices',
+    'Designing and developing APIs',
+    'Design and deployment of databases (postgres, Mssql, mongodb)',
+    'Pixel-perfect implementation of UI',
+    'Design and implementation of continuous integration and deployment',
+    'Implementing testing platforms and unit tests',
+    'Learn and Test new technologies, frameworks and languages',
+    'Server setup and management',
   ];
   return (
     <div className="skills">
@@ -77,13 +63,18 @@ const Skills = ({ windowWidth, windowHeight, isMobileSized }) => {
         // onExit={this.listSwitch}
       >
         <div className="skilllist">
-          {skilllist.map((el, i) => {
-            return (
-              <p className="skillitem" key={i}>
-                {el}
-              </p>
-            );
-          })}
+          <div>What I can do for you</div>
+          <div className="skilllistbody">
+            <div>
+              {skilllist.map((el, i) => {
+                return (
+                  <p className="skillitem" key={i}>
+                    {el}
+                  </p>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </CSSTransition>
     </div>

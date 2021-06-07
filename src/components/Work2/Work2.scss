@@ -1,9 +1,33 @@
 .work2 {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  overflow: auto;
 
-  > div:first-child {
+  .work2__nav {
+    font-family: Orbitron;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    div {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      &:first-child {
+      }
+      &:last-child {
+        justify-self: flex-end;
+      }
+    }
+  }
+
+  > div:last-child {
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .work2__body {
@@ -23,6 +47,7 @@
     padding: 30px;
     > div:nth-child(1) {
       font-size: 2.5rem;
+      font-weight: bold;
     }
     > div:nth-child(2) {
       margin-top: 20px;
@@ -33,17 +58,18 @@
   .work2__images {
     display: flex;
     align-items: flex-start;
-    // gap: 30px;
     div {
-      flex: 1;
+      // flex: 1;
       cursor: pointer;
-      padding: 20px;
-      &.selected {
-        border: orange solid 2px;
-      }
+      overflow: hidden;
     }
     img {
-      width: 100%;
+      padding: 20px;
+      max-height: 180px;
+      max-width: 100%;
+      &.selected {
+        border: var(--base-color) solid 2px;
+      }
     }
   }
 

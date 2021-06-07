@@ -4,7 +4,8 @@ nav {
   top: 0;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  color: aliceblue;
+  // color: aliceblue;
+  color: rgb(187, 185, 185);
   cursor: pointer;
   height: 100vh;
   font-size: 2rem;
@@ -23,7 +24,7 @@ nav {
     li {
       transition: color ease 0.3s;
       &:hover {
-        color: orange;
+        color: var(--base-color);
       }
     }
   }
@@ -34,6 +35,11 @@ nav {
     transition-timing-function: ease-out;
   }
 }
+
+.list__selected {
+  color: var(--base-color);
+}
+
 .name {
   position: relative;
   display: flex;
@@ -45,7 +51,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: orange;
+    background-color: var(--base-color);
     border-radius: 50%;
     animation-name: ball;
     animation-duration: 1s;
