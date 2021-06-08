@@ -53,7 +53,8 @@ const Home = ({ anim }) => {
         </div>
       </div>
       <Link className="div4" to="/work">
-        Work
+        <span>Work</span>
+        <i className="fas fa-level-down-alt"></i>
       </Link>
     </div>
   );

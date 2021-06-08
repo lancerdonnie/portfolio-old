@@ -4,16 +4,17 @@ import './Icon.scss';
 
 const Icon = ({ className, height, width }) => {
   const [style, setStyle] = useState({});
+
   useEffect(() => {
     setStyle({
       top: rand(height, width).hei,
       left: rand(height, width).wid,
       transitionProperty: 'position',
-      transitionDuration: '4s'
+      transitionDuration: '4s',
     });
-    console.log('changed');
   }, [height, width]);
-  const handleEnter = e => {
+
+  const handleEnter = (e) => {
     var maxX = width - 60 - e.target.clientWidth;
     var maxY = height - 60 - e.target.clientHeight;
     function getRandomInt(min, max) {
@@ -21,10 +22,11 @@ const Icon = ({ className, height, width }) => {
     }
     const newStyle = {
       top: getRandomInt(0, maxY),
-      left: getRandomInt(0, maxX)
+      left: getRandomInt(0, maxX),
     };
     setStyle(newStyle);
   };
+
   return <i onMouseEnter={handleEnter} className={className} style={style}></i>;
 };
 

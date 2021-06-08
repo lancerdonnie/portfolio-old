@@ -1,4 +1,5 @@
-@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
+// @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css');
 .icons {
   position: fixed;
   height: 100%;
@@ -7,12 +8,14 @@
 .icons i {
   position: absolute;
   font-size: 3rem;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .skills {
   position: relative;
   overflow: auto;
   width: 100%;
+  font-family: Orbitron;
+  font-weight: bold;
 }
 
 .skilllist {
@@ -33,7 +36,6 @@
 
 .skilllistbody {
   letter-spacing: 2px;
-  // font-weight: bold;
   > div {
     text-align: center;
   }
@@ -46,7 +48,6 @@
   z-index: 2;
   color: rgb(187, 185, 185);
   font-size: 0.9rem;
-  // font-weight: 600;
   text-transform: uppercase;
 }
 

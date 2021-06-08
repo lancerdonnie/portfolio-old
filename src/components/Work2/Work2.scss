@@ -73,13 +73,24 @@
     }
   }
 
+  .work2__links {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 7px;
+    i {
+      font-size: 20px;
+    }
+  }
+
   .tech {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 20px;
     span {
-      background-color: #005aff;
+      color: var(--bg-color);
+      background-color: white;
       border-radius: 5px;
       padding: 3px 6px;
     }

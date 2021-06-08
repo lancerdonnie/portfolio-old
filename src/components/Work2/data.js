@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     name: 'Blanche Neige',
     images: [
@@ -133,7 +133,6 @@ export default [
     name: 'Open Sky',
     images: [
       'https://res.cloudinary.com/dtyrfo0fx/image/upload/v1622889259/portfolio/opensky2.png',
-      ,
       'https://res.cloudinary.com/dtyrfo0fx/image/upload/v1622889259/portfolio/opensky.png',
       'https://res.cloudinary.com/dtyrfo0fx/image/upload/v1622889259/portfolio/opensky3.png',
     ],
@@ -238,3 +237,5 @@ export default [
     tech: [],
   },
 ];
+
+export default data;

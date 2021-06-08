@@ -1,5 +1,5 @@
 .home {
-  // color: rgb(187, 185, 185);
+  color: rgb(187, 185, 185);
   // flex: 1;
   // font-size: 3rem;
   // font-weight: 900;
@@ -36,7 +36,8 @@
   .div4 {
     font-size: 3rem;
     font-weight: 900;
-    border: 1px solid #777474;
+    border: 1px solid #333;
+    // border: 1px solid var(--base-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +45,12 @@
     transition: all ease 0.3s;
     transition-property: background-color, font-size;
     // background-color: var(--sec-color);
+    > span {
+      margin-right: 1rem;
+    }
+    i {
+      transition: none;
+    }
     &:hover {
       background-color: white;
       color: var(--base-color);

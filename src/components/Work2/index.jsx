@@ -78,6 +78,14 @@ const Index = () => {
           <div className="work2__right">
             <div> {data.name}</div>
             <div> {data.desc}</div>
+            <div className="work2__links">
+              <a href={data.link} target="blank">
+                <span className="material-icons">open_in_new</span>
+              </a>
+              <a href={data.git} target="blank">
+                <i className="fab fa-github social"></i>
+              </a>
+            </div>
             <div className="tech">
               {data.tech.map((e, i) => (
                 <span key={i}>{e}</span>
