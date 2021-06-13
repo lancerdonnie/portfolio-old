@@ -126,3 +126,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 424px) {
+  .contact {
+    .contactbox {
+      padding: 20px;
+      height: unset;
+      .svg {
+        text-align: center;
+      }
+    }
+  }
+}

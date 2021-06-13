@@ -27,7 +27,7 @@
   > div:first-child {
     padding: 20px 0;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: Orbitron;
     color: var(--base-color);
     margin-bottom: 30px;
@@ -46,7 +46,6 @@
   padding: 0.2rem 0.4rem;
   border-radius: 0.4rem;
   z-index: 2;
-  color: rgb(187, 185, 185);
   font-size: 0.9rem;
   text-transform: uppercase;
 }

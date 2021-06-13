@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import useStore from '../utils/store';
 import './NavBar.scss';
+import { motion } from 'framer-motion';
 
 const x = {
   '/': 0,
@@ -55,7 +56,7 @@ const NavBar = () => {
 
 const LinkItem = ({ text, to, pathname, onClick }) => {
   return (
-    <li>
+    <motion.li whileTap={{ scale: 1.1 }}>
       <Link
         // to={{ pathname: to, state: { isReverse: isReverse(pathname, to) } }}
         onClick={onClick}
@@ -64,7 +65,7 @@ const LinkItem = ({ text, to, pathname, onClick }) => {
       >
         {text}
       </Link>
-    </li>
+    </motion.li>
   );
 };
 

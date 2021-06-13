@@ -1,1 +1,1 @@
-export const BASE_COLOR = 'var(--base-color)';
+export const BASE_COLOR = 'var(--svg-color)';

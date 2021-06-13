@@ -3,17 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons');
 
 :root {
-  --base-color: #932432;
-  --sec-color: #243293;
+  // Pallete
+  // #000000
+  // #14213d
+  // #fca311
+  // #e5e5e5
+  // #ffffff
+
+  --base-color: #fca311;
+  --svg-color: #14213d;
+  --sec-color: #fca311;
   --alt-text: #fff;
-  --bg-color: #0b0500;
-  --color: white;
+  --alt-text-2: #51a26a;
+  --bg-color: #000;
+  --color: #e5e5e5;
+  --color-2: rgb(187, 185, 185);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
 }
 
 body {
@@ -69,4 +83,10 @@ a {
 .wor-enter-active {
   transform: translateX(0);
   transition: all 3000ms ease;
+}
+
+@media only screen and (max-width: 424px) {
+  html {
+    font-size: 12px;
+  }
 }

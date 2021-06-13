@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Work2.scss';
 import project from './data';
+import { AnimateSharedLayout, motion } from 'framer-motion';
 
 // const data = {
 //   name: 'Blanche Neige',
@@ -55,17 +56,20 @@ const Index = () => {
           )}
         </div>
       </div>
-      <div>
+      <div className="work2__main">
         <div className="work2__images">
-          {data.images.map((e, i) => (
-            <div key={page + i} onClick={() => setSelected(i)}>
-              <img
-                className={`${selected === i ? 'selected' : ''}`}
-                src={e}
-                alt={data.name + ' picture' + i}
-              />
-            </div>
-          ))}
+          <AnimateSharedLayout>
+            {data.images.map((e, i) => (
+              <div key={page + i} onClick={() => setSelected(i)}>
+                <motion.img
+                  layout
+                  className={`${selected === i ? 'selected' : ''}`}
+                  src={e}
+                  alt={data.name + ' picture' + i}
+                />
+              </div>
+            ))}
+          </AnimateSharedLayout>
         </div>
         <div className="work2__body">
           <div className="work2__left">

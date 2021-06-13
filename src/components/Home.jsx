@@ -2,58 +2,48 @@ import React from 'react';
 import './Home.scss';
 import Svgs from './Svgs';
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Home = () => {
   return (
-    <div className="home">
-      <Svgs />
-      <div
-        className="div1"
-        style={{
-          fontSize: 50,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          // fontFamily: 'Sigmar One',
-          fontFamily: 'Orbitron',
-        }}
-      >
-        <div>
-          <div>Hi,</div>
-          <div>I'm Adedeji Babajide</div>
-        </div>
-      </div>
-      <div
-        className="div2"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontSize: 25,
-        }}
-      >
-        <div>
-          <div>I'm a fullstack developer</div>
-          <div>I love building stuff</div>
-          <div>I love learning new things</div>
-        </div>
-      </div>
-      <div className="div3">
-        <div>
+    <AnimatePresence>
+      <div className="home">
+        <Svgs />
+        <div className="div1">
           <div>
-            <span style={{ color: 'var(--alt-text)' }}>FullStack</span>{' '}
-            Developer
+            <motion.div
+              style={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              Adedeji Babajide
+            </motion.div>
           </div>
-          <div>Infrastructure</div>
-          <div>Enterprise</div>
         </div>
+        <motion.div
+          className="div2"
+          style={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          A Software Developer who loves to build exiting things and learn
+          everyday
+        </motion.div>
+        <MotionLink
+          className="div4"
+          to="/work"
+          style={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 1.3 }}
+        >
+          <span>Work</span>
+          <i className="fas fa-level-down-alt"></i>
+        </MotionLink>
       </div>
-      <Link className="div4" to="/work">
-        <span>Work</span>
-        <i className="fas fa-level-down-alt"></i>
-      </Link>
-    </div>
+    </AnimatePresence>
   );
 };
+
+const MotionLink = motion(Link);
 
 export default Home;

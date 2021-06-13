@@ -4,8 +4,7 @@ nav {
   top: 0;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  color: aliceblue;
-  // color: rgb(187, 185, 185);
+  color: var(--color-2);
   cursor: pointer;
   height: 100vh;
   font-size: 2rem;
@@ -14,6 +13,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
   .list {
     display: flex;
     justify-content: space-evenly;

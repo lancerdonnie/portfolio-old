@@ -1,41 +1,42 @@
 .home {
-  color: rgb(187, 185, 185);
-  // flex: 1;
-  // font-size: 3rem;
-  // font-weight: 900;
-  // color: white;
-  // text-align: right;
-  // padding-right: 1rem;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: flex-end;
   position: relative;
-  // height: 100vh;
-  // overflow: hidden;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 3fr 1fr;
-  font-family: orbitron;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  padding: 1rem;
   svg {
     z-index: -1;
   }
 
   .div1 {
-    grid-column: 1 / span 2;
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    // font-family: 'Orbitron';
+    font-weight: bold;
+    letter-spacing: 5px;
+    height: 50%;
+    text-align: center;
   }
 
-  .div3 {
-    grid-column: 1 / span 2;
-    font-size: 2rem;
-    font-weight: 900;
-    padding-left: 20px;
+  .div2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 25%;
   }
 
   .div4 {
-    font-size: 3rem;
-    font-weight: 900;
+    height: 25%;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 2.5rem;
+    font-weight: bold;
     border: 1px solid #333;
     // border: 1px solid var(--base-color);
     display: flex;
@@ -44,7 +45,6 @@
     cursor: pointer;
     transition: all ease 0.3s;
     transition-property: background-color, font-size;
-    // background-color: var(--sec-color);
     > span {
       margin-right: 1rem;
     }
@@ -52,8 +52,8 @@
       transition: none;
     }
     &:hover {
-      background-color: white;
-      color: var(--base-color);
+      background-color: var(--base-color);
+      color: var(--color);
       font-size: 3.5rem;
     }
     &:active {
@@ -109,8 +109,15 @@
   animation-duration: unset !important;
   animation-delay: unset !important;
 }
+
 @media only screen and (max-width: 424px) {
   .home {
     font-size: 2.5rem;
+    .div4 {
+      width: 100%;
+      margin: 20px 0;
+      // border-left: none;
+      // border-right: none;
+    }
   }
 }

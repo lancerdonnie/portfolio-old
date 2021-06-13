@@ -23,8 +23,7 @@
     }
   }
 
-  > div:last-child {
-    height: 50px;
+  .work2__main {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -68,7 +67,7 @@
       max-height: 180px;
       max-width: 100%;
       &.selected {
-        border: var(--base-color) solid 2px;
+        border: var(--sec-color) solid 2px;
       }
     }
   }
@@ -84,7 +83,7 @@
   }
 
   .work2__test {
-    color: blue;
+    color: var(--alt-text-2);
     margin-top: 20px;
   }
 
@@ -99,6 +98,22 @@
       background-color: white;
       border-radius: 5px;
       padding: 3px 6px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .work2__body {
+    flex-direction: column;
+  }
+  .work2 {
+    .work2__right {
+      margin-top: 20px;
+      padding: 0;
+    }
+    .work2__main {
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './Skills.scss';
 import withDimensions from '../wrapper/withDimensions';
 import Icon from './Icon';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const icons = [
   'devicon-nodejs-plain colored',
@@ -28,35 +29,57 @@ const skilllist = [
 
 const Skills = ({ windowWidth, windowHeight }) => {
   return (
-    <div className="skills">
-      <div className="icons">
-        {icons.map((el, i) => {
-          return (
-            <Icon
-              key={i}
-              className={el}
-              height={windowHeight}
-              width={windowWidth}
-            />
-          );
-        })}
-      </div>
-      <div className="skilllist">
-        <div>What I can do for you</div>
-        <div className="skilllistbody">
-          <div>
-            {skilllist.map((el, i) => {
-              return (
-                <p className="skillitem" key={i}>
-                  {el}
-                </p>
-              );
-            })}
+    <AnimatePresence>
+      <div className="skills">
+        <div className="icons">
+          {icons.map((el, i) => {
+            return (
+              <Icon
+                key={i}
+                className={el}
+                height={windowHeight}
+                width={windowWidth}
+              />
+            );
+          })}
+        </div>
+        <div className="skilllist">
+          <motion.div
+            style={{ y: 150, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            What I can do for you
+          </motion.div>
+          <div className="skilllistbody">
+            <motion.div variants={variants1} initial="init" animate="anim">
+              {skilllist.map((el, i) => {
+                return (
+                  <motion.p variants={variants2} className="skillitem" key={i}>
+                    {el}
+                  </motion.p>
+                );
+              })}
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </AnimatePresence>
   );
+};
+
+const variants1 = {
+  init: {},
+  anim: {
+    transition: {
+      staggerChildren: 0.7,
+      delayChildren: 1.5,
+    },
+  },
+};
+const variants2 = {
+  init: { opacity: 0, y: 50 },
+  anim: { opacity: 1, y: 0 },
 };
 
 export default withDimensions(Skills);
