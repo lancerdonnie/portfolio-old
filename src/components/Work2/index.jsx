@@ -78,6 +78,11 @@ const Index = () => {
           <div className="work2__right">
             <div> {data.name}</div>
             <div> {data.desc}</div>
+            {data.test && (
+              <div className="work2__test">
+                Test account - user: {data.test[0]} | pass: {data.test[1]}
+              </div>
+            )}
             <div className="work2__links">
               <a href={data.link} target="blank">
                 <span className="material-icons">open_in_new</span>

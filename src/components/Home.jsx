@@ -1,10 +1,9 @@
 import React from 'react';
 import './Home.scss';
-import Arrow from './Arrow';
 import Svgs from './Svgs';
 import { Link } from 'react-router-dom';
 
-const Home = ({ anim }) => {
+const Home = () => {
   return (
     <div className="home">
       <Svgs />
@@ -31,9 +30,6 @@ const Home = ({ anim }) => {
           alignItems: 'center',
           justifyContent: 'center',
           fontSize: 25,
-          // textAlign: 'justify',
-          // padding: 30,
-          // alignItems: 'flex-end',
         }}
       >
         <div>
